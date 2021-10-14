@@ -7,17 +7,28 @@ interface InterfaceElement{
 class Circle implements InterfaceElement{
     public function draw(){
         echo "нарисовать круг <br>";
+        echo "<div style='
+                width:100px; 
+                height: 100px;
+                border-radius:50%;
+                 background-color: #be2121;'></div>";
     }
     public function color(){
         echo "покрасить в красный <br>";
+        echo "<br>";
     }
 }
 class Square implements InterfaceElement{
     public function draw(){
         echo "нарисовать квадрат <br>";
+        echo "<div style='
+                width:100px; 
+                height: 100px;
+                 background-color: forestgreen;'></div>";
     }
     public function color(){
         echo "покрасить в зеленый <br>";
+        echo "<br>";
     }
 }
 class Line implements InterfaceElement{
